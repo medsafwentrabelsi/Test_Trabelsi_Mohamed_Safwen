@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BoxFfficeTest</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="internet_not_found">Internet Not found</string>
+    <string name="invalid_movie_name">Please Insert a valid movie name</string>
+    <string name="my_review">My review</string>
+    <string name="audience">Audience</string>
+    <string name="critics">Critics</string>
+    <string name="release_date">Release Date:</string>
+    <string name="details">Details</string>
+    <string name="tooltipsearchmovie">Click here to search movie</string>
+</resources>

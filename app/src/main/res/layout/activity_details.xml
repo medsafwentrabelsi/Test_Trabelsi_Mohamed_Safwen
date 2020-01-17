@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.DetailsActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/movie_title_text_view_activity_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_15ssp" />
+
+    <ImageView
+        android:id="@+id/movie_paster_image_view_activity_details"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/movie_title_text_view_activity_details"
+        android:layout_marginLeft="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/release_date_title_text_view_activity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_title_text_view_activity_details"
+        android:layout_toEndOf="@+id/movie_paster_image_view_activity_details"
+        android:text="@string/release_date"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/release_date_text_view_activity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_title_text_view_activity_details"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_toEndOf="@+id/release_date_title_text_view_activity_details"
+        android:text="@string/release_date"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/critics_text_view_activity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/release_date_title_text_view_activity_details"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/movie_paster_image_view_activity_details"
+        android:text="@string/critics"
+        android:textColor="@color/colorPrimary" />
+
+    <RatingBar
+        android:id="@+id/critics_rating_bar_activity_details"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_date_text_view_activity_details"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_toEndOf="@+id/critics_text_view_activity_details"
+        android:foregroundGravity="center"
+        android:numStars="10"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/audience_text_view_activity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/critics_text_view_activity_details"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/movie_paster_image_view_activity_details"
+        android:text="@string/audience"
+        android:textColor="@color/colorPrimary" />
+
+    <RatingBar
+        android:id="@+id/audience_rating_bar_activity_details"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/critics_rating_bar_activity_details"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/audience_text_view_activity_details"
+        android:foregroundGravity="center"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+         />
+
+    <TextView
+        android:id="@+id/my_review_text_view_activity_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_paster_image_view_activity_details"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="@string/my_review"
+        android:textColor="@color/colorPrimary" />
+
+    <RatingBar
+        android:id="@+id/my_rating_bar_activity_details"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_review_text_view_activity_details"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:foregroundGravity="center"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:rating="5" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_rating_bar_activity_details" />
+</RelativeLayout>
